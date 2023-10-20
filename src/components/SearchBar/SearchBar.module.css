@@ -1,0 +1,39 @@
+.SearchBar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.SearchBar input {
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+    border-bottom: 1px solid transparent;  /* Default underline is transparent */
+    background-color: transparent; 
+    color: white; 
+    width: 100%;
+    box-shadow: none;
+    outline: none; 
+    transition: border-color 0.3s ease;  /* Smooth transition for focus effect */
+}
+
+.SearchBar input:focus {
+    border-color: #1DB954;  /* Changes the underline color to white on focus */
+}
+
+.SearchBar input::placeholder {
+    line-height: 1;   /* Adjust the line height to center the placeholder text */
+    vertical-align: middle;  /* Align the text in the middle */
+}
+
+.SearchBar button {
+    background-color: transparent; /* Make button transparent */
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #1DB954;
+}
+

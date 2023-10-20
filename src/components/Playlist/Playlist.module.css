@@ -1,0 +1,103 @@
+.Playlist {
+    background-color: #121212;
+    border-radius: 15px;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px; /* This provides the 15px spacing around the container */
+    box-sizing: border-box; /* To ensure padding is included in width */
+}
+
+.Playlist h1 {
+    font-size: 25px;
+    margin: 0;
+}
+
+.Playlist button {
+    background-color: #1DB954;
+    border: none;
+    border-radius: 50px;
+    padding: 8px 16px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.PlaylistHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.PlaylistHeader button {
+    padding: 8px 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #1DB954;
+}
+
+.PlaylistHeader button:hover {
+    background-color: #282828; 
+}
+
+.PlaylistNameInput {
+    background-color: transparent;  
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #FFFFFF;  
+    padding: 8px 16px 6px 16px;  
+    color: #FFFFFF;  
+    font-size: 16px;  
+    width: 60%;  
+    transition: background-color 0.3s ease, border-color 0.3s ease;  /* added transition for border-color */
+    outline: none;  
+}
+
+.PlaylistNameInput:focus {
+    border-color: #1DB954;  /* to change the underline color on focus */
+    box-shadow: none;  /* remove box-shadow if not desired */
+}
+
+.PlaylistNameInput::placeholder {
+    line-height: 1;   /* Adjust the line height to center the placeholder text */
+    vertical-align: middle;  /* Align the text in the middle */
+}
+
+.ExitEditModeButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px; 
+    line-height: 1;
+    color: #FFFFFF !important;
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%; 
+    right: 10px;  
+    transform: translateY(-50%); 
+    transition: background-color 0.3s ease;
+}
+
+.ExitEditModeButton:hover {
+    background-color: #282828;
+}
+
+.PlaylistSave {
+    margin-top: auto; 
+    margin-bottom: 15px;
+    align-self: center; 
+    transition: background-color 0.3s ease; 
+
+}
+
+.PlaylistSave:hover {
+    background-color: #149440; 
+}

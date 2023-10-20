@@ -1,0 +1,41 @@
+.App {
+  display: grid;
+  grid-template-rows: 10% 90%; /* Two rows: 25% and 75% */
+  grid-template-columns: 100%; /* Single column */
+  grid-template-areas:
+    "header"
+    "content"; /* Updated grid areas */
+  height: 100vh;
+}
+  
+.AppHeader {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #121212;
+  margin: 10px;
+  margin-bottom: 5px;
+  border-radius: 15px;
+}
+
+.AppHeader h1 {
+  margin: 0; /* Remove margin to align with the top */
+  padding-left: 10px;
+}
+  
+.AppContent {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: 30% 70%; /* Two columns: 30% and 70% */
+  grid-template-areas:
+    "playlist results"; /* Updated grid areas */
+  height: 100%;
+}
+
+.AppPlaylist, .AppSearchResults {
+  margin-top: 5px;
+  margin: 10px;
+  justify-content: center;
+}
