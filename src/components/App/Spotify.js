@@ -1,5 +1,5 @@
 const clientId = '2eebff515c5540f9af2cf08f0cf02b8d';  // Replace with your Spotify client ID
-const redirectUri = 'https://trackstack.netlify.app/';  // Your app's redirect URI after Spotify authentication
+const redirectUri = 'https://trackstack.netlify.app/callback';  // Your app's redirect URI after Spotify authentication
 
 let accessToken;
 
