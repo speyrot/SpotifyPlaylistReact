@@ -1,9 +1,10 @@
 .App {
   display: grid;
-  grid-template-rows: 10% 90%; /* Two rows: 25% and 75% */
+  grid-template-rows: 10% 45% 45%; /* Three rows: 10%, 45%, and 45% */
   grid-template-columns: 100%; /* Single column */
   grid-template-areas:
     "header"
+    "search"
     "content"; /* Updated grid areas */
   height: 100vh;
 }
@@ -28,9 +29,11 @@
 .AppContent {
   grid-area: content;
   display: grid;
-  grid-template-columns: 30% 70%; /* Two columns: 30% and 70% */
+  grid-template-rows: 50% 50%; /* Two rows: 50% each */
+  grid-template-columns: 100%; /* Single column */
   grid-template-areas:
-    "playlist results"; /* Updated grid areas */
+    "results"
+    "playlist"; /* Updated grid areas */
   height: 100%;
 }
 

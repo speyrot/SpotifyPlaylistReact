@@ -47,29 +47,27 @@ function App() {
     <div className={styles.App}>
       <div className={styles.AppHeader}>
         <h1>TrackStack</h1>
-        <div className={styles.Search}>
-          <SearchBar onSearch={searchTracks} />
-        </div>
+        {/* Your header content */}
+      </div>
+      <div className={styles.AppSearch}>
+        <SearchBar onSearch={searchTracks} />
       </div>
       <div className={styles.AppContent}>
+        <div className={styles.AppResults}>
+          <SearchResults results={searchResults} onAddTrack={addTrackToPlaylist} />
+        </div>
         <div className={styles.AppPlaylist}>
-          <Playlist 
-            tracks={playlistTracks} 
-            onRemoveTrack={removeTrackFromPlaylist} 
-            onPlaylistNameChange={setPlaylistName} 
+          <Playlist
+            tracks={playlistTracks}
+            onRemoveTrack={removeTrackFromPlaylist}
+            onPlaylistNameChange={setPlaylistName}
             playlistName={playlistName}
             onSave={savePlaylist}
           />
         </div>
-        <div className={styles.AppSearchResults}>
-          <SearchResults 
-            results={searchResults} 
-            onAddTrack={addTrackToPlaylist} 
-          />
-        </div>
       </div>
     </div>
-  );
+  );  
 }
 
 export default App;
