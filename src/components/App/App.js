@@ -51,22 +51,17 @@ function App() {
           <SearchBar onSearch={searchTracks} />
         </div>
       </div>
-      <div className={styles.AppContent}>
-        <div className={styles.AppPlaylist}>
-          <Playlist 
-            tracks={playlistTracks} 
-            onRemoveTrack={removeTrackFromPlaylist} 
-            onPlaylistNameChange={setPlaylistName} 
-            playlistName={playlistName}
-            onSave={savePlaylist}
-          />
-        </div>
-        <div className={styles.AppSearchResults}>
-          <SearchResults 
-            results={searchResults} 
-            onAddTrack={addTrackToPlaylist} 
-          />
-        </div>
+      <div className={styles.AppSearchResults}>
+        <SearchResults results={searchResults} onAddTrack={addTrackToPlaylist} />
+      </div>
+      <div className={styles.AppPlaylist}>
+        <Playlist
+          tracks={playlistTracks}
+          onRemoveTrack={removeTrackFromPlaylist}
+          onPlaylistNameChange={setPlaylistName}
+          playlistName={playlistName}
+          onSave={savePlaylist}
+        />
       </div>
     </div>
   );
