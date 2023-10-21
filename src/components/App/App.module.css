@@ -39,3 +39,26 @@
   margin: 10px;
   justify-content: center;
 }
+
+/* Mobile layout styles */
+@media (max-width: 767px) {
+  .App {
+    grid-template-rows: 10% 45% 45%; /* 10% top, 45% middle (search + results), 45% bottom (playlist) */
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "header"
+      "searchResults"
+      "playlist";
+    height: 100vh;
+  }
+
+  .AppContent {
+    grid-template-columns: 100%; /* Full width for mobile */
+  }
+
+  .AppPlaylist, .AppSearchResults {
+    margin-top: 5px;
+    margin: 10px;
+    justify-content: flex-start; /* Adjust alignment for mobile */
+  }
+}
