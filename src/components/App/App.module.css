@@ -41,7 +41,7 @@
 }
 
 /* Mobile layout styles */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .App {
     grid-template-rows: auto auto auto; /* Three rows: auto, auto, auto */
     grid-template-columns: 100%; /* Single column */
@@ -50,12 +50,13 @@
       "results"
       "playlist"; /* Updated grid areas */
   }
-
-  .AppContent {
-    grid-template-columns: 100%; /* Full width for mobile */
+  
+  .AppHeader {
+    justify-content: center; /* Center content horizontally on mobile */
+    text-align: center; /* Center text horizontally on mobile */
   }
-
-  .AppPlaylist, .AppSearchResults {
-    width: 100%;
+  
+  .AppSearchResults, .AppPlaylist {
+    width: 100%; /* Ensure full width on mobile */
   }
 }
