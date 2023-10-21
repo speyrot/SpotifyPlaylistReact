@@ -56,8 +56,6 @@
   }
 
   .AppPlaylist, .AppSearchResults {
-    margin-top: 5px;
-    margin: 10px;
-    justify-content: flex-start; /* Adjust alignment for mobile */
+    width: 100%;
   }
 }
