@@ -37,3 +37,32 @@
     color: #1DB954;
 }
 
+@media (max-width: 768px) {
+    .SearchBar {
+      justify-content: center; /* Center the search bar items for mobile */
+      flex-direction: column; /* Stack items vertically for mobile */
+      padding: 10px;
+    }
+  
+    .SearchBar input {
+      width: 100%; /* Expand input width for mobile */
+      margin-right: 0; /* Remove margin for mobile */
+      margin-bottom: 10px; /* Add spacing between input and button for mobile */
+    }
+  
+    .SearchBar button {
+      padding: 10px; /* Increase button padding for mobile */
+      width: 100%; /* Expand button width for mobile */
+    }
+}
+
+@media (max-width: 768px) {
+    .SearchResults {
+      padding: 10px; /* Adjust padding for mobile */
+      max-height: none; /* Remove max height for mobile */
+    }
+  
+    .SearchResults h1 {
+      font-size: 20px; /* Reduce font size for mobile */
+    }
+}

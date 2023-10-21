@@ -118,7 +118,48 @@
     justify-content: center;
 }
 
-
+@media (max-width: 768px) {
+    .Tracklist {
+      padding: 5px; /* Adjust padding for mobile */
+    }
+  
+    .Track {
+      width: 100%; /* Expand width for mobile */
+      padding: 8px; /* Adjust padding for mobile */
+    }
+  
+    .TrackImage {
+      width: 70px; /* Reduce width for mobile */
+      height: 70px; /* Reduce height for mobile */
+      margin-right: 5px; /* Adjust margin for mobile */
+    }
+  
+    .Track h3 {
+      font-size: 16px; /* Reduce font size for mobile */
+    }
+  
+    .Track p {
+      font-size: 12px; /* Reduce font size for mobile */
+    }
+  
+    .TrackAction, .TrackRemoveAction {
+      font-size: 14px; /* Reduce font size for mobile */
+      width: 20px; /* Reduce width for mobile */
+      height: 20px; /* Reduce height for mobile */
+    }
+  
+    .Track.editing .TrackInfo {
+      margin-right: 20px; /* Adjust margin for mobile */
+    }
+  
+    .Track.editing .TrackRemoveAction {
+      right: 5px; /* Adjust position for mobile */
+    }
+  
+    .TrackRemoveAction .minusSign {
+      font-size: 14px; /* Reduce font size for mobile */
+    }
+}
 
 
 

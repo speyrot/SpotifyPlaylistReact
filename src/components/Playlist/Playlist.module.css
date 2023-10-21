@@ -101,3 +101,33 @@
 .PlaylistSave:hover {
     background-color: #149440; 
 }
+
+@media (max-width: 768px) {
+    .Playlist {
+      /* Adjust styles for mobile layout */
+      padding: 10px; /* Reduce padding for better mobile spacing */
+    }
+  
+    .Playlist h1 {
+      font-size: 20px; /* Reduce font size for mobile */
+    }
+  
+    .PlaylistHeader button {
+      padding: 5px 10px; /* Reduce button padding for mobile */
+      font-size: 14px; /* Reduce button font size for mobile */
+    }
+  
+    .ExitEditModeButton {
+      font-size: 16px; /* Reduce exit button font size for mobile */
+      right: 5px; /* Adjust position for mobile */
+    }
+  
+    .PlaylistSave {
+      margin-top: 10px; /* Adjust margin for mobile */
+      font-size: 14px; /* Reduce font size for mobile */
+    }
+  
+    .PlaylistNameInput {
+      width: 70%; /* Increase input width for mobile */
+    }
+}
