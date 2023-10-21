@@ -43,13 +43,12 @@
 /* Mobile layout styles */
 @media (max-width: 767px) {
   .App {
-    grid-template-rows: 10% 45% 45%; /* 10% top, 45% middle (search + results), 45% bottom (playlist) */
-    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto; /* Three rows: auto, auto, auto */
+    grid-template-columns: 100%; /* Single column */
     grid-template-areas:
       "header"
-      "searchResults"
-      "playlist";
-    height: 100vh;
+      "results"
+      "playlist"; /* Updated grid areas */
   }
 
   .AppContent {
