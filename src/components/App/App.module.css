@@ -41,7 +41,7 @@
 }
 
 /* Mobile layout styles */
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   .App {
     grid-template-rows: auto auto auto; /* Three rows: auto, auto, auto */
     grid-template-columns: 100%; /* Single column */
@@ -65,11 +65,10 @@
   .AppHeader h1 {
     font-size: 25px;
     margin: 0;
-    margin-bottom: 0;
   }
 
   .Search {
-    margin-top: 0; /* Add some space below the title */
+    margin-top: 10; /* Add some space below the title */
   }
 
   /* Add styles for the Results and Playlist containers */
