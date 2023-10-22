@@ -52,12 +52,33 @@
   }
   
   .AppHeader {
-    justify-content: center; /* Center content horizontally on mobile */
-    text-align: center; /* Center text horizontally on mobile */
-    width: 80%;
+    grid-area: header;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    padding: 15px;
+    background-color: #121212;
+    margin: 10px;
+    border-radius: 15px;
   }
-  
-  .AppSearchResults, .AppPlaylist {
-    width: 80%; /* Ensure full width on mobile */
+
+  .AppHeader h1 {
+    font-size: 25px;
+    margin: 0;
+  }
+
+  .Search {
+    margin-top: 10px; /* Add some space below the title */
+  }
+
+  /* Add styles for the Results and Playlist containers */
+  .AppSearchResults {
+    grid-area: results;
+    margin-top: 10px; /* Add space between header and results */
+  }
+
+  .AppPlaylist {
+    grid-area: playlist;
+    margin-top: 10px; /* Add space between results and playlist */
   }
 }
