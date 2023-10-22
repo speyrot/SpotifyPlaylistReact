@@ -68,7 +68,7 @@
   }
 
   .Search {
-    margin-top: 10; /* Add some space below the title */
+    margin-top: 0; /* Add some space below the title */
   }
 
   /* Add styles for the Results and Playlist containers */

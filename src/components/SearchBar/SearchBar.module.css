@@ -47,7 +47,7 @@
   .SearchBar input {
     width: 100%; /* Expand input width for mobile */
     margin-right: 0; /* Remove margin for mobile */
-    margin-bottom: 10px; /* Add spacing between input and button for mobile */
+    margin-bottom: 1px; /* Add spacing between input and button for mobile */
   }
 
   .SearchBar button {
