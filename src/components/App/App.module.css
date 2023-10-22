@@ -60,6 +60,7 @@
     background-color: #121212;
     margin: 10px;
     border-radius: 15px;
+    height: 20%;
   }
 
   .AppHeader h1 {
@@ -75,10 +76,12 @@
   .AppSearchResults {
     grid-area: results;
     margin-top: 10px; /* Add space between header and results */
+    height: 40%;
   }
 
   .AppPlaylist {
     grid-area: playlist;
     margin-top: 10px; /* Add space between results and playlist */
+    height: 40%;
   }
 }
