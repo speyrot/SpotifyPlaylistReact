@@ -1,6 +1,6 @@
 .Playlist {
     background-color: #121212;
-    border-radius: 15px;
+    border-radius: 1rem;
     overflow-y: auto;
     width: 100%;
     height: 100%;
@@ -8,20 +8,20 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 15px; /* This provides the 15px spacing around the container */
-    box-sizing: border-box; /* To ensure padding is included in width */
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .Playlist h1 {
-    font-size: 25px;
+    font-size: 1.5rem;
     margin: 0;
 }
 
 .Playlist button {
     background-color: #1DB954;
     border: none;
-    border-radius: 50px;
-    padding: 8px 16px;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
     cursor: pointer;
     color: #FFFFFF;
 }
@@ -35,7 +35,7 @@
 }
 
 .PlaylistHeader button {
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -48,40 +48,38 @@
 
 .PlaylistNameInput {
     background-color: transparent;  
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    border: none;
     border-bottom: 1px solid #FFFFFF;  
-    padding: 8px 16px 6px 16px;  
+    padding: 0.5rem 1rem 0.3rem 1rem;  
     color: #FFFFFF;  
-    font-size: 16px;  
+    font-size: 1rem;  
     width: 60%;  
-    transition: background-color 0.3s ease, border-color 0.3s ease;  /* added transition for border-color */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
     outline: none;  
 }
 
 .PlaylistNameInput:focus {
-    border-color: #1DB954;  /* to change the underline color on focus */
-    box-shadow: none;  /* remove box-shadow if not desired */
+    border-color: #1DB954;
+    box-shadow: none;
 }
 
 .PlaylistNameInput::placeholder {
-    line-height: 1;   /* Adjust the line height to center the placeholder text */
-    vertical-align: middle;  /* Align the text in the middle */
+    line-height: 1;
+    vertical-align: middle;
 }
 
 .ExitEditModeButton {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 18px; 
+    font-size: 1rem; 
     line-height: 1;
     color: #FFFFFF !important;
-    padding: 5px;
+    padding: 0.3rem;
     border-radius: 50%;
     position: absolute;
     top: 50%; 
-    right: 10px;  
+    right: 0.6rem;  
     transform: translateY(-50%); 
     transition: background-color 0.3s ease;
 }
@@ -92,10 +90,9 @@
 
 .PlaylistSave {
     margin-top: auto; 
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
     align-self: center; 
     transition: background-color 0.3s ease; 
-
 }
 
 .PlaylistSave:hover {
@@ -104,30 +101,31 @@
 
 @media (max-width: 768px) {
     .Playlist {
-      /* Adjust styles for mobile layout */
-      padding: 10px; /* Reduce padding for better mobile spacing */
+        padding: 0.5rem;
     }
   
     .Playlist h1 {
-      font-size: 20px; /* Reduce font size for mobile */
+        font-size: 1.25rem;
     }
   
-    .PlaylistHeader button {
-      padding: 5px 10px; /* Reduce button padding for mobile */
-      font-size: 14px; /* Reduce button font size for mobile */
+    .PlaylistHeader button,
+    .PlaylistNameInput,
+    .ExitEditModeButton,
+    .PlaylistSave {
+        font-size: 0.875rem; /* Reduce font size for mobile */
     }
   
+    .PlaylistHeader button,
     .ExitEditModeButton {
-      font-size: 16px; /* Reduce exit button font size for mobile */
-      right: 5px; /* Adjust position for mobile */
+        padding: 0.3rem 0.6rem; /* Adjust padding for mobile */
     }
   
     .PlaylistSave {
-      margin-top: 10px; /* Adjust margin for mobile */
-      font-size: 14px; /* Reduce font size for mobile */
+        margin-top: 0.5rem; /* Adjust margin for mobile */
     }
   
     .PlaylistNameInput {
-      width: 70%; /* Increase input width for mobile */
+        width: 70%; /* Increase input width for mobile */
     }
 }
+
