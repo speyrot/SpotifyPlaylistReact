@@ -13,14 +13,5 @@
     margin: 0; /* Resetting margin to ensure h1 is 15px from the top due to the container's padding */
 }
 
-@media (max-width: 768px) {
-    .SearchResults {
-      padding: 10px; /* Adjust padding for mobile */
-      max-height: none; /* Remove max height for mobile */
-    }
-  
-    .SearchResults h1 {
-      font-size: 20px; /* Reduce font size for mobile */
-    }
-}
+
 
