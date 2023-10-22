@@ -54,9 +54,10 @@
   .AppHeader {
     justify-content: center; /* Center content horizontally on mobile */
     text-align: center; /* Center text horizontally on mobile */
+    width: 80%;
   }
   
   .AppSearchResults, .AppPlaylist {
-    width: 100%; /* Ensure full width on mobile */
+    width: 80%; /* Ensure full width on mobile */
   }
 }
