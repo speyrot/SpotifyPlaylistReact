@@ -65,6 +65,7 @@
   .AppHeader h1 {
     font-size: 25px;
     margin: 0;
+    margin-bottom: 0;
   }
 
   .Search {
