@@ -34,9 +34,10 @@
 
 @media (max-width: 768px) {
   .App {
-      grid-template-columns: 100%; /* Single column */
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: auto 1fr 1fr; 
+      grid-template-columns: 1fr;
       grid-template-areas:
+          "header"
           "playlist"
           "results";
   }

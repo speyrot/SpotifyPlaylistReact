@@ -86,10 +86,16 @@
 }
 
 @media (max-width: 768px) {
-  .Track {
-      flex-direction: column;
-      align-items: flex-start;
+  .Tracklist {
+    max-height: 20rem;  /* Adjust max height for mobile */
+    padding: 0.5rem;
   }
+
+  .Track {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+  }
+
 
   .TrackImage {
       margin-right: 0;
