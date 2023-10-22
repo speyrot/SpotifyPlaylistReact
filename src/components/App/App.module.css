@@ -1,7 +1,7 @@
 .App {
   display: grid;
   grid-template-rows: 10% 90%; /* Two rows: 25% and 75% */
-  grid-template-columns: 100%; /* Single column */
+  grid-template-columns: 35% 65%; 
   grid-template-areas:
     "header"
     "content"; /* Updated grid areas */
@@ -40,4 +40,8 @@
   justify-content: center;
 }
 
-
+@media screen {
+  .App {
+    grid-template-columns: 100%; /* Single column */
+  }
+}
