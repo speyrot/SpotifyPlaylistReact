@@ -4,14 +4,15 @@
     overflow-y: auto;
     width: 100%;
     height: 100%;
-    padding: 15px; /* Added this for consistent spacing */
-    box-sizing: border-box; /* This ensures padding is included in the total width and height */
+    padding: 15px; 
+    box-sizing: border-box; 
 }
   
 .SearchResults h1 {
     font-size: 25px;
-    margin: 0; /* Resetting margin to ensure h1 is 15px from the top due to the container's padding */
+    margin: 0 0 10px 0; /* Added bottom margin for spacing between the title and the content */
 }
+
 
 
 
